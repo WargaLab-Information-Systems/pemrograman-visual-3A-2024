@@ -583,7 +583,7 @@ public class BG extends javax.swing.JFrame {
 
             }
         else{
-            JOptionPane.showMessageDialog(this,"Klik Centang Agar Bisa Melanjutkan","COBA LAGI",JOptionPane.WARNING_MESSAGE);
+           JOptionPane.showConfirmDialog(null, "Isi Pesan");
         }
     }//GEN-LAST:event_simpanActionPerformed
 
