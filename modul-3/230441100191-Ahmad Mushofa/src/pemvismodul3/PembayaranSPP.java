@@ -11,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Lavilia
+ * @author AHMAD
  */
 public class PembayaranSPP extends javax.swing.JFrame {
     boolean[] statusPembayaranBulan = new boolean[12];
