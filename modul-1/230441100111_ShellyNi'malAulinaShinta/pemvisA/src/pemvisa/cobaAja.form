@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="0" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelTelepon" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelAlamat" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelEmail" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelKelamin" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelKelas" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="30" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="textFieldTelpon" min="-2" pref="364" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="textFieldNisn" min="-2" pref="356" max="-2" attributes="0"/>
+                                          <Component id="textFieldNama" min="-2" pref="356" max="-2" attributes="0"/>
+                                          <Component id="textFieldtempat" min="-2" pref="356" max="-2" attributes="0"/>
+                                          <Component id="textFieldTanggal" alignment="0" min="-2" pref="356" max="-2" attributes="0"/>
+                                          <Component id="textFieldAlamat" alignment="0" min="-2" pref="356" max="-2" attributes="0"/>
+                                          <Component id="textFieldEmail" alignment="0" min="-2" pref="356" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="buttonLaki" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="buttonPerempuan" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="comboBoxkelas" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelNama" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelNisn" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelTempat" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelTanggal" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="checkboxData" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="buttonBatal" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                          <Component id="buttonReset" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="buttonSimpan" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="textFieldNama" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelNama" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="labelNisn" min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="textFieldNisn" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="textFieldtempat" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelTempat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="textFieldTanggal" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelTanggal" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labelAlamat" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="textFieldAlamat" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="textFieldEmail" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelEmail" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelKelamin" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonLaki" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonPerempuan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelTelepon" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textFieldTelpon" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelKelas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboBoxkelas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Component id="checkboxData" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="buttonBatal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonReset" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonSimpan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="31" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="99" type="rgb"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="labelGambar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labelnamaformulir" min="-2" pref="325" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="labelSekolah" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Component id="labelJalan" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="labelnomer" min="-2" pref="219" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="labelNpsn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="labelGambar" min="-2" pref="57" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="labelnamaformulir" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelSekolah" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelJalan" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="labelnomer" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="labelNpsn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="labelGambar">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\Shely\Downloads\foto.jpg"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelnamaformulir">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="FORMULIR PENDAFTARAN SISWA SEKOLAH"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelSekolah">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="SMA NEGERI 1 NUSANTARA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelJalan">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="JL. Raya Telang, PO, Box. 2 Kamal, Bangkalan - Madura"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelnomer">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Telp : (031) 3011146, Fax (031) 3011506"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labelNpsn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="NPSN : 20506325"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="labelNama">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nama : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelNisn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="NISN : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelAlamat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Alamat : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelEmail">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Email :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelKelamin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Jenis Kelamin :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelTelepon">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="No. Telepon : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelKelas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Kelas :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="checkboxData">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Data Yang Saya Masukkan Sudah Benar."/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkboxDataActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldNama">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldNamaActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldNisn">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldNisnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldAlamat">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldAlamatActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldEmail">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldEmailActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="buttonLaki">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Laki-Laki"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonLakiActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="buttonPerempuan">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Perempuan"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelTempat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tempat Lahir : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelTanggal">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tanggal Lahir : "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldtempat">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldtempatActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldTanggal">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldTanggalActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textFieldTelpon">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldTelponActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboBoxkelas">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="---Pilihan Kelas ---"/>
+                <StringItem index="1" value="1. Akselirasi"/>
+                <StringItem index="2" value="2. Unggulan"/>
+                <StringItem index="3" value="3. Reguler"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboBoxkelasActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="buttonBatal">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Batal"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonBatalActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="buttonReset">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reset"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonResetActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="buttonSimpan">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Simpan"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonSimpanActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
