@@ -167,6 +167,11 @@ public class Soal1 extends javax.swing.JFrame {
 
         Check1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Check1.setText("SAYA SUDAH MENGISI DATA DENGAN BENAR BANGET");
+        Check1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Check1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -477,6 +482,10 @@ public class Soal1 extends javax.swing.JFrame {
           Fasilitas1.setText("Kasur 2,Bantal Guling, Kipas , Lemari");
         }
     }//GEN-LAST:event_Paket1ActionPerformed
+
+    private void Check1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Check1ActionPerformed
 
     /**
      * @param args the command line arguments
