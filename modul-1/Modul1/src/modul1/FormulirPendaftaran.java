@@ -333,7 +333,7 @@ public class FormulirPendaftaran extends javax.swing.JFrame {
             PanelBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelBGLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(PanelBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(PanelBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PA, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(UKM, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -429,7 +429,7 @@ public class FormulirPendaftaran extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Berhasil Disimpan", "Sukses", JOptionPane.INFORMATION_MESSAGE);
         }
         } else {
-        JOptionPane.showMessageDialog(this, "Harap Centang Terlebih Dahulu!", "Error", JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Harap Centang Terlebih Dahulu!", "Error", JOptionPane.QUESTION_MESSAGE);
         }
 
     }//GEN-LAST:event_BTSimpanActionPerformed
