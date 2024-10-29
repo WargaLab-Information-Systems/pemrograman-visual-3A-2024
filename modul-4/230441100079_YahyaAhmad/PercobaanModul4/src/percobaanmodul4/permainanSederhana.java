@@ -4,13 +4,15 @@ import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.Icon;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 public class permainanSederhana extends javax.swing.JFrame {
 
     /**
      * Creates new form permainanSederhana
      */
-    int target = (int)(Math.random() * 100);
+    int target = (int)(Math.random() * 100) + 1;
     int sisapermainan = 10;
+    int nomor = 1;
 //    private DefaultListModel<String> tampung;
     ArrayList<String> tampung = new ArrayList<String>();
     Icon iconSukses = new javax.swing.ImageIcon(getClass().getResource("../custome/close.png"));
@@ -45,7 +47,8 @@ public class permainanSederhana extends javax.swing.JFrame {
         roundedPanel3 = new percobaanmodul4.RoundedPanel();
         jLabel5 = new javax.swing.JLabel();
         roundedPanel4 = new percobaanmodul4.RoundedPanel();
-        jTextField4 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextField4 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,7 +75,7 @@ public class permainanSederhana extends javax.swing.JFrame {
             .addGroup(roundedPanel2Layout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(jLabel1)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
         roundedPanel2Layout.setVerticalGroup(
             roundedPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,7 +147,7 @@ public class permainanSederhana extends javax.swing.JFrame {
                     .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel1Layout.createSequentialGroup()
-                .addContainerGap(106, Short.MAX_VALUE)
+                .addContainerGap(105, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(27, 27, 27)
                 .addComponent(jButton2)
@@ -169,7 +172,7 @@ public class permainanSederhana extends javax.swing.JFrame {
                 .addGroup(roundedPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         jPanel1.add(roundedPanel1, java.awt.BorderLayout.CENTER);
@@ -191,7 +194,7 @@ public class permainanSederhana extends javax.swing.JFrame {
         roundedPanel3Layout.setHorizontalGroup(
             roundedPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundedPanel3Layout.createSequentialGroup()
-                .addContainerGap(164, Short.MAX_VALUE)
+                .addContainerGap(163, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addGap(152, 152, 152))
         );
@@ -211,23 +214,25 @@ public class permainanSederhana extends javax.swing.JFrame {
 
         jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(251, 243, 242));
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setColumns(20);
+        jTextField4.setRows(5);
+        jScrollPane1.setViewportView(jTextField4);
 
         javax.swing.GroupLayout roundedPanel4Layout = new javax.swing.GroupLayout(roundedPanel4);
         roundedPanel4.setLayout(roundedPanel4Layout);
         roundedPanel4Layout.setHorizontalGroup(
             roundedPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundedPanel4Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGap(43, 43, 43)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         roundedPanel4Layout.setVerticalGroup(
             roundedPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(roundedPanel4Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addGap(52, 52, 52)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         jPanel2.add(roundedPanel4, java.awt.BorderLayout.CENTER);
@@ -238,7 +243,7 @@ public class permainanSederhana extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tabbedPaneCustom1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(tabbedPaneCustom1, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,35 +259,51 @@ public class permainanSederhana extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:        
-        if (sisapermainan > 0){
+        // TODO add your handling code here: 
+//        DefaultTableModel tabelnya = (DefaultTableModel) jTable1.getModel();
+
+        if (sisapermainan > 1){
             try{
                 int tebakanUser = Integer.parseInt(jTextField1.getText());
-                
-                if(tebakanUser < target){
-                    jTextField2.setText("Terlalu Kecil");
-                    sisapermainan --;
-                    jButton1.setText("Tebak "+ sisapermainan);
-                    return;
-                } else if(tebakanUser > target){
-                    jTextField2.setText("Terlalu Besar");
-                    sisapermainan --;
-                    jButton1.setText("Tebak "+ sisapermainan);
-                    return;
-                }else{
-                    String nama = JOptionPane.showInputDialog(this, "Masukkan Nama Anda:");
-                    if(nama.isEmpty()){
-                        JOptionPane.showMessageDialog(this, "Input Nama dulu bro", "Message", JOptionPane.WARNING_MESSAGE, iconSukses);
+                if (tebakanUser <= 100){   
+                    System.out.println("Angka benarnya " + target);
+                    if(tebakanUser < target){
+                        jTextField2.setText("Terlalu Kecil");
+                        sisapermainan --;
+                        jButton1.setText("Tebak "+ sisapermainan);
+                        return;
+                    } else if(tebakanUser > target){
+                        jTextField2.setText("Terlalu Besar");
+                        sisapermainan --;
+                        jButton1.setText("Tebak "+ sisapermainan);
+                        return;
                     }else{
-                    int score = sisapermainan * 10;
-                    jTextField3.setText(String.valueOf(score));
-                    tampung.add(nama + " - Skor: " + score);
-                    jTextField4.setText(String.valueOf(tampung));
+                        String nama = JOptionPane.showInputDialog(this, "Masukkan Nama Anda:", null, JOptionPane.INFORMATION_MESSAGE);
+                        if(nama.isEmpty()){
+                            JOptionPane.showMessageDialog(this, "Input Nama dulu bro", "Message", JOptionPane.WARNING_MESSAGE, iconSukses);
+                        }else{
+                        int score = sisapermainan * 10;
+                        jTextField3.setText(String.valueOf(score));
+                        tampung.add(nomor +". " + nama + " - Skor: " + score);
+//                        jList1.setListData(tampung.toArray(new String[0]));
+                        nomor ++;
+                        jTextField4.setText(String.join("\n",tampung));
+//                        target = (int) (Math.random() * 100);
+//                        sisapermainan = 10;
+//                        jTextField1.setText(""); 
+//                        jTextField2.setText(""); 
+//                        jTextField3.setText("");
+////                        nomor = 1;
+////                        jTextField4.setText("");
+//                        jButton1.setText("Tebak " + sisapermainan);
+                        }
                     }
+                }else{
+                        JOptionPane.showMessageDialog(this, "Masukkan angka dibawah /= 100", "Message", JOptionPane.WARNING_MESSAGE, iconSukses);
+
                 }
             }catch(NumberFormatException e){
                 JOptionPane.showMessageDialog(this, "Masukkan Integer", "Message", JOptionPane.WARNING_MESSAGE, iconSukses);
-
             }
         }else{
             JOptionPane.showMessageDialog(this, "Anda Gagal lebih 10 Kali", "Message", JOptionPane.WARNING_MESSAGE, iconSukses);
@@ -291,9 +312,10 @@ public class permainanSederhana extends javax.swing.JFrame {
             jTextField1.setText(""); 
             jTextField2.setText(""); 
             jTextField3.setText("");
+//            nomor = 1;
         //    jTextField4.setText("");
             jButton1.setText("Tebak " + sisapermainan);
-        //    tampung.clear();
+//            tampung.clear();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -357,10 +379,11 @@ public class permainanSederhana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextArea jTextField4;
     private percobaanmodul4.RoundedPanel roundedPanel1;
     private percobaanmodul4.RoundedPanel roundedPanel2;
     private percobaanmodul4.RoundedPanel roundedPanel3;

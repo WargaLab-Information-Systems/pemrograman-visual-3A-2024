@@ -10,10 +10,7 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author ya991
- */
+
 public class sppperbulan extends javax.swing.JFrame {
 
     /**
