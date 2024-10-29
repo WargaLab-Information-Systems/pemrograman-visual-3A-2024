@@ -1,104 +1,60 @@
- private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-        Paracetamol4 frame2 = new Paracetamol4();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                        
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol1 frame2 = new Paracetamol1();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                        
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol12 frame2 = new Paracetamol12();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                        
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol3 frame2 = new Paracetamol3();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                        
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:\
-        Paracetamol5 frame2 = new Paracetamol5();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                        
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol7 frame2 = new Paracetamol7();
-        frame2.setVisible(true);
-        this.dispose(); 
-        
-    }                                        
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol8 frame2 = new Paracetamol8();
-        frame2.setVisible(true);
-        this.dispose(); 
-    }                                        
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol9 frame2 = new Paracetamol9();
-        frame2.setVisible(true);
-        this.dispose(); 
-    }                                        
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        Paracetamol frame2 = new Paracetamol();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                        
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
-        Paracetamol6 frame2 = new Paracetamol6();
-        frame2.setVisible(true);
-        this.dispose();
-    }                                         
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(soal1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+       String inpAngka = tfAngka.getText();
+       
+        if(inpAngka.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Input angka tidak boeh kosong", "Input angka", JOptionPane.INFORMATION_MESSAGE);
+            return;
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new soal1().setVisible(true);
+        
+        try { 
+           int angka =Integer.parseInt(inpAngka);
+           
+           clickCount++;
+           
+           int remainingCount = countLimit - clickCount;
+           jButton3.setText("Tebak " + "(" + Integer.toString(remainingCount) + ")");
+           
+           if(clickCount > countLimit) {
+               resetProgram();
+                JOptionPane.showMessageDialog(this, "Anda Gagal", "Gagal", JOptionPane.WARNING_MESSAGE);
+                return;
+           }
+           if(countLimit == clickCount) {
+               jButton2.setEnabled(true);
+               jButton3.setEnabled(false);
+               tfAngka.setEnabled(false);
+           }
+          // cek apa sudah men generate angka random
+            if (angkaRandom == 0) {
+                angkaRandom = (int) ((Math.random() * 100) + 1);
             }
-        });
+            if(angka == angkaRandom) {
+                int sisaKlik = countLimit - clickCount;
+                int score = sisaKlik * nilaiScore;
+                tfHasil.setText("Aku adalah angka " + Integer.toString(angkaRandom));
+                tfScore.setText("Score Kamu" + Integer.toString(score));
+                JOptionPane.showMessageDialog(this, "Anda Berhasil", "Berhasil", JOptionPane.INFORMATION_MESSAGE);
+                
+                String response = null;
+                while (response == null || response.isEmpty()) {
+                    response = JOptionPane.showInputDialog(this, "Masukkan nama anda:");
+
+                    if (response == null) {
+                        JOptionPane.showMessageDialog(this, "Input tidak boleh kosong, harap masukkan nama anda.", "Error", JOptionPane.ERROR_MESSAGE);
+                    }else {
+                        
+                        JOptionPane.showMessageDialog(this, "Score anda di simpan");
+                    }
+                }
+            resetProgram();
+            }else if(angka < angkaRandom) {
+                tfHasil.setText("Aku lebih besar");
+            }else if(angka > angkaRandom){
+                tfHasil.setText("Aku lebih kecil");
+            }
+            
+        }catch(NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Yang anda inputkan bukan angka", "Input Tebak", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
